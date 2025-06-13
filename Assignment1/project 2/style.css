@@ -1,0 +1,66 @@
+body {
+    min-height: 100vh;
+    background: #fda085;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Quicksand', Arial, sans-serif;
+    margin: 0;
+}
+.bucket-list-container {
+    background: #fff;
+    border-radius: 18px;
+    padding: 36px 32px 30px 32px;
+    width: 340px;
+    max-width: 94vw;
+    text-align: left;
+}
+.bucket-list-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #ff8c42;
+    margin-bottom: 22px;
+    text-align: center;
+    letter-spacing: 1px;
+}
+ul.bucket-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.bucket-list li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 18px;
+    font-size: 1.1rem;
+    border-radius: 8px;
+    padding: 8px 10px;
+    background: #fff7f0;
+    transition: background 0.2s;
+}
+.bucket-list li.completed {
+    background: #e6f8e0;
+    color: #86b049;
+    text-decoration: line-through;
+    font-style: italic;
+}
+.icon {
+    margin-right: 14px;
+    font-size: 1.3em;
+    width: 1.5em;
+    text-align: center;
+    flex-shrink: 0;
+}
+@media (max-width: 480px) {
+    .bucket-list-container {
+        padding: 18px 8px 16px 8px;
+        width: 97vw;
+    }
+    .bucket-list-title {
+        font-size: 1.3rem;
+    }
+    .bucket-list li {
+        font-size: 1rem;
+        padding: 7px 6px;
+    }
+}

@@ -1,0 +1,77 @@
+body {
+    background-image: url(hero.jpeg);
+    background-size: cover;
+    min-height: 100vh;
+    margin: 0;
+    font-family: 'Segoe UI', 'Arial', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.invitation-card {
+    background:rgba(255,255,255,0.6);
+    border-radius: 24px;
+    box-shadow: 0 8px 32px rgba(60, 30, 90, 1.0);
+    padding: 2.5rem 2rem 2rem 2rem;
+    max-width: 500px;
+    width: 100%;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    
+}
+
+
+h1 {
+    font-family: 'Dancing Script', cursive, sans-serif;
+    font-size: 2.2rem;
+    color: #a259c4;
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+    letter-spacing: 1px;
+}
+
+.intro {
+    color: #6d4c7c;
+    font-size: 1.05rem;
+    margin-bottom: 1.2rem;
+}
+
+.event-time {
+    display: block;
+    font-weight: bold;
+    color: #4a2c5b;
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+}
+
+.venue {
+    color: #5e3b6c;
+    margin-bottom: 1.5rem;
+    font-size: 1rem;
+}
+
+.venue-title {
+    font-weight: bold;
+    color: #a259c4;
+}
+
+#rsvpbtn {
+    display: inline-block;
+    background: linear-gradient(90deg, #a259c4 0%, #f8e8ee 100%);
+    color: #fff;
+    text-decoration: none;
+    padding: 0.7em 2em;
+    border-radius: 30px;
+    font-weight: bold;
+    font-size: 1.1rem;
+    box-shadow: 0 2px 10px rgba(162, 89, 196, 0.15);
+    transition: background 0.2s, transform 0.2s;
+}
+
+#rsvpbtn:hover {
+    background: linear-gradient(90deg, #f8e8ee 0%, #a259c4 100%);
+    color: #a259c4;
+    transform: translateY(-2px) scale(1.04);
+}
