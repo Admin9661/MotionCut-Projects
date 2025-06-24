@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Recipe Cards</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Global Gourmet: World Flavors Recipe Cards</h1>
+        <div class="filter">
+            <label for="cuisine-select">Filter by Cuisine:</label>
+            <select id="cuisine-select">
+                <option value="all">All</option>
+                <option value="italian">Italian</option>
+                <option value="mexican">Mexican</option>
+                <option value="indian">Indian</option>
+            </select>
+        </div>
+    </header>
+
+    <main class="recipe-container">
+        <section class="recipe-card italian">
+            <img src="./spaghetti.jpg" alt="Spaghetti Carbonara">
+            <h2>Spaghetti Carbonara</h2>
+            <p class="description">A classic Italian pasta with pancetta, eggs, and cheese.</p>
+            <button class="toggle-button">Show Ingredients</button>
+            <ul class="ingredients hidden">
+                <li>200g spaghetti</li>
+                <li>100g pancetta</li>
+                <li>2 eggs</li>
+                <li>50g parmesan</li>
+                <li>Salt & pepper</li>
+            </ul>
+            <ol class="instructions">
+                <li>Cook pasta in salted boiling water until al dente.</li>
+                <li>Fry pancetta until crispy.</li>
+                <li>Whisk eggs and cheese together in a bowl.</li>
+                <li>Drain pasta and combine with pancetta.</li>
+                <li>Remove from heat, add egg-cheese mixture, and toss quickly.</li>
+                <li>Season with salt and pepper. Serve hot.</li>
+            </ol>
+            <div class="rating">
+                <span>⭐️⭐️⭐️⭐️☆</span> (4.0)
+            </div>
+        </section>
+        <section class="recipe-card italian">
+            <img src="./margherita.jpeg" alt="Margherita Pizza">
+            <h2>Margherita Pizza</h2>
+            <p class="description">Classic Italian pizza topped with fresh tomatoes, mozzarella, and basil.</p>
+            <button class="toggle-button">Show Ingredients</button>
+            <ul class="ingredients hidden">
+                <li>Pizza dough</li>
+                <li>Tomato sauce</li>
+                <li>Fresh mozzarella</li>
+                <li>Fresh basil leaves</li>
+                <li>Olive oil</li>
+                <li>Salt</li>
+            </ul>
+            <ol class="instructions">
+                <li>Preheat oven to 475°F (245°C).</li>
+                <li>Roll out pizza dough on a floured surface.</li>
+                <li>Spread tomato sauce evenly over the dough.</li>
+                <li>Add slices of fresh mozzarella cheese.</li>
+                <li>Top with fresh basil leaves.</li>
+                <li>Drizzle with olive oil and sprinkle with salt.</li>
+                <li>Bake for 10-12 minutes until crust is golden and cheese is bubbly.</li>
+            </ol>
+            <div class="rating">
+                <span>⭐️⭐️⭐️⭐️☆</span> (4.2)
+            </div>
+        </section>
+        <section class="recipe-card italian">
+            <img src="./lasagna.jpeg" alt="Lasagna">
+            <h2>Lasagna</h2>
+            <p class="description">Layered pasta with rich meat sauce, creamy béchamel, and melted cheese.</p>
+            <button class="toggle-button">Show Ingredients</button>
+            <ul class="ingredients hidden">
+                <li>Lasagna noodles</li>
+                <li>Ground beef</li>
+                <li>Tomato sauce</li>
+                <li>Béchamel sauce</li>
+                <li>Mozzarella cheese</li>
+                <li>Parmesan cheese</li>
+                <li>Spices</li>
+            </ul>
+            <ol class="instructions">
+                <li>Preheat oven to 375°F (190°C).</li>
+                <li>Cook lasagna noodles according to package instructions.</li>
+                <li>Prepare meat sauce by browning beef and adding tomato sauce and spices.</li>
+                <li>Layer noodles, meat sauce, béchamel, and cheeses in a baking dish.</li>
+                <li>Repeat layers and finish with cheese on top.</li>
+                <li>Bake for 35-40 minutes until golden and bubbly.</li>
+                <li>Let rest for 10 minutes before serving.</li>
+            </ol>
+            <div class="rating">
+                <span>⭐️⭐️⭐️⭐️⭐️</span> (4.6)
+            </div>
+        </section>
+        <section class="recipe-card italian">
+            <img src="./risottoallamilanese.jpg" alt="Risotto alla Milanese">
+            <h2>Risotto alla Milanese</h2>
+            <p class="description">Creamy saffron-infused risotto, a classic from Milan.</p>
+            <button class="toggle-button">Show Ingredients</button>
+            <ul class="ingredients hidden">
+                <li>Arborio rice</li>
+                <li>Saffron threads</li>
+                <li>Chicken broth</li>
+                <li>Onion</li>
+                <li>Butter</li>
+                <li>Parmesan cheese</li>
+                <li>White wine</li>
+            </ul>
+            <ol class="instructions">
+                <li>Heat broth and keep warm; steep saffron in a little hot broth.</li>
+                <li>Sauté chopped onion in butter until soft.</li>
+                <li>Add Arborio rice and cook, stirring, until edges are translucent.</li>
+                <li>Pour in white wine and stir until absorbed.</li>
+                <li>Add saffron-infused broth and a ladle of hot broth; stir until absorbed.</li>
+                <li>Continue adding broth, stirring, until rice is creamy and al dente.</li>
+                <li>Stir in butter and Parmesan cheese before serving.</li>
+            </ol>
+            <div class="rating">
+                <span>⭐️⭐️⭐️⭐️☆</span> (4.4)
+            </div>
+        </section>
+
+        <section class="recipe-card mexican">
+            <img src="./mexicantacos.jpeg" alt="Tacos">
+            <h2>Mexican Tacos</h2>
+            <p class="description">Crispy tacos filled with seasoned beef and fresh veggies.</p>
+            <button class="toggle-button">Show Ingredients</button>
+            <ul class="ingredients hidden">
+                <li>Taco shells</li>
+                <li>Ground beef</li>
+                <li>Onions & tomatoes</li>
+                <li>Spices</li>
+                <li>Cheddar cheese</li>
+            </ul>
+            <ol class="instructions">
+                <li>Cook ground beef with spices until browned.</li>
+                <li>Warm taco shells as per package instructions.</li>
+                <li>Fill each shell with cooked beef.</li>
+                <li>Top with chopped onions, tomatoes, and cheddar cheese.</li>
+                <li>Serve immediately and enjoy.</li>
+            </ol>
+            <div class="rating">
+                <span>⭐️⭐️⭐️⭐️⭐️</span> (5.0)
+            </div>
+        </section>
+
+        <section class="recipe-card mexican">
+            <img src="./enchiladas.jpeg" alt="Enchiladas">
+            <h2>Enchiladas</h2>
+            <p class="description">Rolled tortillas filled with chicken and topped with spicy enchilada sauce.</p>
+            <button class="toggle-button">Show Ingredients</button>
+            <ul class="ingredients hidden">
+                <li>Corn tortillas</li>
+                <li>Shredded chicken</li>
+                <li>Enchilada sauce</li>
+                <li>Cheddar cheese</li>
+                <li>Onions</li>
+                <li>Cilantro</li>
+            </ul>
+            <ol class="instructions">
+                <li>Preheat oven to 375°F (190°C).</li>
+                <li>Fill corn tortillas with shredded chicken.</li>
+                <li>Roll up the filled tortillas and place them seam-side down in a baking dish.</li>
+                <li>Pour enchilada sauce over the rolled tortillas.</li>
+                <li>Sprinkle cheddar cheese and onions on top.</li>
+                <li>Bake for 20-25 minutes until cheese is melted and bubbly.</li>
+                <li>Garnish with cilantro and serve hot.</li>
+            </ol>
+            <div class="rating">
+                <span>⭐️⭐️⭐️⭐️☆</span> (4.3)
+            </div>
+        </section>
+
+        <section class="recipe-card mexican">
+            <img src="./chilesrellenos.jpg" alt="Chiles Rellenos">
+            <h2>Chiles Rellenos</h2>
+            <p class="description">Poblano peppers stuffed with cheese, battered, and fried to perfection.</p>
+            <button class="toggle-button">Show Ingredients</button>
+            <ul class="ingredients hidden">
+                <li>Poblano peppers</li>
+                <li>Monterey Jack cheese</li>
+                <li>Eggs</li>
+                <li>Flour</li>
+                <li>Tomato sauce</li>
+                <li>Spices</li>
+            </ul>
+            <ol class="instructions">
+                <li>Roast poblano peppers until skins blister, then peel and remove seeds.</li>
+                <li>Stuff each pepper with Monterey Jack cheese.</li>
+                <li>Separate eggs and beat whites until stiff, then fold in yolks to make batter.</li>
+                <li>Dust stuffed peppers with flour, dip in egg batter.</li>
+                <li>Fry peppers in hot oil until golden and crispy.</li>
+                <li>Serve hot with tomato sauce and garnish as desired.</li>
+            </ol>
+            <div class="rating">
+                <span>⭐️⭐️⭐️⭐️☆</span> (4.1)
+            </div>
+        </section>
+
+        <section class="recipe-card indian">
+            <img src="./paneerbuttermasala.jpg" alt="Paneer Butter Masala">
+            <h2>Paneer Butter Masala</h2>
+            <p class="description">Creamy curry made with paneer and spiced tomato gravy.</p>
+            <button class="toggle-button">Show Ingredients</button>
+            <ul class="ingredients hidden">
+                <li>Paneer cubes</li>
+                <li>Tomato puree</li>
+                <li>Butter & cream</li>
+                <li>Spices</li>
+                <li>Onions</li>
+            </ul>
+            <ol class="instructions">
+                <li>Heat butter in a pan and sauté onions until golden.</li>
+                <li>Add ginger-garlic paste and cook for a minute.</li>
+                <li>Add tomato puree and cook until oil separates.</li>
+                <li>Mix in spices and cook for 2 minutes.</li>
+                <li>Add paneer cubes and simmer for 5 minutes.</li>
+                <li>Stir in cream and cook until the gravy is creamy and thick.</li>
+                <li>Garnish with coriander and serve hot.</li>
+            </ol>
+            <div class="rating">
+                <span>⭐️⭐️⭐️⭐️☆</span> (4.5)
+            </div>
+        </section>
+        <section class="recipe-card indian">
+            <img src="./chickentikkamasala.jpeg" alt="Chicken Tikka Masala">
+            <h2>Chicken Tikka Masala</h2>
+            <p class="description">Tender chicken pieces cooked in a creamy spiced tomato sauce.</p>
+            <button class="toggle-button">Show Ingredients</button>
+            <ul class="ingredients hidden">
+                <li>Chicken breast</li>
+                <li>Yogurt</li>
+                <li>Tomato puree</li>
+                <li>Cream</li>
+                <li>Spices</li>
+                <li>Onions</li>
+            </ul>
+            <ol class="instructions">
+                <li>Marinate chicken pieces in yogurt and spices for at least 1 hour.</li>
+                <li>Grill or pan-cook the marinated chicken until cooked through.</li>
+                <li>Sauté onions, ginger, and garlic in butter until golden.</li>
+                <li>Add tomato puree and cook with spices until oil separates.</li>
+                <li>Add grilled chicken pieces to the sauce and simmer.</li>
+                <li>Stir in cream and cook for a few more minutes.</li>
+                <li>Garnish with fresh coriander and serve hot with naan or rice.</li>
+            </ol>
+            <div class="rating">
+                <span>⭐️⭐️⭐️⭐️⭐️</span> (4.8)
+            </div>
+        </section>
+        <section class="recipe-card indian">
+            <img src="./cholebhature.jpeg" alt="Chole Bhature">
+            <h2>Chole Bhature</h2>
+            <p class="description">Spicy chickpea curry served with fluffy fried bread.</p>
+            <button class="toggle-button">Show Ingredients</button>
+            <ul class="ingredients hidden">
+                <li>Chickpeas</li>
+                <li>Onions & tomatoes</li>
+                <li>Spices</li>
+                <li>Flour</li>
+                <li>Yogurt</li>
+                <li>Oil</li>
+            </ul>
+            <ol class="instructions">
+                <li>Soak chickpeas overnight and pressure cook until soft.</li>
+                <li>Sauté onions, tomatoes, and spices to make the gravy.</li>
+                <li>Add cooked chickpeas to the gravy and simmer until thick.</li>
+                <li>Prepare dough for bhature using flour, yogurt, and a pinch of salt.</li>
+                <li>Roll out dough balls and deep-fry until golden and puffed.</li>
+                <li>Serve hot chole with freshly fried bhature.</li>
+            </ol>
+            <div class="rating">
+                <span>⭐️⭐️⭐️⭐️☆</span> (4.6)
+            </div>
+        </section>
+        <section class="recipe-card indian">
+            <img src="./masaladosa.jpg" alt="Masala Dosa">
+            <h2>Masala Dosa</h2>
+            <p class="description">Crispy rice crepe filled with spiced potato mixture.</p>
+            <button class="toggle-button">Show Ingredients</button>
+            <ul class="ingredients hidden">
+                <li>Rice & urad dal</li>
+                <li>Potatoes</li>
+                <li>Onions</li>
+                <li>Spices</li>
+                <li>Oil</li>
+            </ul>
+            <ol class="instructions">
+                <li>Soak rice and urad dal, then grind to a smooth batter and ferment overnight.</li>
+                <li>Boil potatoes, mash, and sauté with onions, spices, and herbs to make the masala filling.</li>
+                <li>Heat a non-stick pan, pour a ladle of batter, and spread into a thin circle.</li>
+                <li>Drizzle oil around the edges and cook until golden and crisp.</li>
+                <li>Place potato masala in the center, fold the dosa, and serve hot.</li>
+            </ol>
+            <div class="rating">
+                <span>⭐️⭐️⭐️⭐️⭐️</span> (4.9)
+            </div>
+        </section>
+        <section class="recipe-card indian">
+            <img src="./dalmakhani.jpg" alt="Dal Makhani">
+            <h2>Dal Makhani</h2>
+            <p class="description">Rich and creamy black lentil curry slow-cooked with butter and cream.</p>
+            <button class="toggle-button">Show Ingredients</button>
+            <ul class="ingredients hidden">
+                <li>Black lentils</li>
+                <li>Kidney beans</li>
+                <li>Tomatoes</li>
+                <li>Cream & butter</li>
+                <li>Spices</li>
+                <li>Onions</li>
+            </ul>
+            <ol class="instructions">
+                <li>Soak black lentils and kidney beans overnight.</li>
+                <li>Pressure cook lentils and beans until soft.</li>
+                <li>Sauté onions, tomatoes, and spices in butter.</li>
+                <li>Add cooked lentils and beans to the masala.</li>
+                <li>Simmer on low heat for 30-40 minutes, stirring occasionally.</li>
+                <li>Stir in cream and more butter before serving.</li>
+            </ol>
+            <div class="rating">
+                <span>⭐️⭐️⭐️⭐️☆</span> (4.7)
+            </div>
+        </section>
+    </main>
+
+    <script>
+        document.querySelectorAll('.toggle-button').forEach(button => {
+            button.addEventListener('click', () => {
+                const ingredients = button.nextElementSibling;
+                ingredients.classList.toggle('hidden');
+                button.textContent = ingredients.classList.contains('hidden') ? 'Show Ingredients' : 'Hide Ingredients';
+            });
+        });
+        document.getElementById('cuisine-select').addEventListener('change', function () {
+            const selectedCuisine = this.value;
+            const cards = document.querySelectorAll('.recipe-card');
+
+            cards.forEach(card => {
+                if (selectedCuisine === "all" || card.classList.contains(selectedCuisine)) {
+                    card.style.display = "block";
+                } else {
+                    card.style.display = "none";
+                }
+            });
+        });
+    </script>
+</body>
+</html>
